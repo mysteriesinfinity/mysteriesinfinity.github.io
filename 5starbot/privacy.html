@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0d17">
+    <meta name="robots" content="noindex, nofollow">
+    <title>5★ Privacy Policy</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --star-color: #ffffff;
+            --bg-top: #0b0d17;
+            --bg-mid: #070912;
+            --bg-bottom: #0e111d;
+            --font-body: "Sora", sans-serif;
+            --text-muted: rgba(255, 255, 255, 0.55);
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, var(--bg-top) 0%, var(--bg-mid) 55%, var(--bg-bottom) 100%);
+            background-color: var(--bg-top);
+            background-attachment: fixed;
+            font-family: var(--font-body);
+            color: var(--star-color);
+        }
+
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
+        }
+
+        html::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.22);
+            border-radius: 999px;
+        }
+
+        html::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .stars-parallax {
+            position: fixed;
+            top: -30%;
+            left: 0;
+            width: 100%;
+            height: 160%;
+            z-index: 0;
+            pointer-events: none;
+            will-change: transform;
+        }
+
+        .stars-container {
+            position: absolute;
+            inset: 0;
+            animation: star-drift 100s linear infinite;
+        }
+
+        .star {
+            position: absolute;
+            background: var(--star-color);
+            border-radius: 50%;
+            animation: twinkle linear infinite;
+        }
+
+        .page {
+            position: relative;
+            z-index: 1;
+            max-width: 40rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4.5rem;
+            opacity: 0;
+            animation: fade-in 1s ease 0.1s forwards;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 2.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            transition: color 0.25s ease;
+        }
+
+        .back:hover {
+            color: var(--star-color);
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            font-family: var(--font-body);
+            font-size: clamp(1.75rem, 5vw, 2.15rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .updated {
+            margin: 0 0 2.75rem;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .policy {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: rgba(255, 255, 255, 0.82);
+        }
+
+        .policy section {
+            margin-bottom: 2.75rem;
+        }
+
+        .policy section:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy h2 {
+            margin: 0 0 1rem;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--star-color);
+        }
+
+        .policy h3 {
+            margin: 1.35rem 0 0.55rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .policy h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .policy p {
+            margin: 0 0 0.9rem;
+        }
+
+        .policy p:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy ul {
+            margin: 0 0 0.9rem;
+            padding-left: 1.2rem;
+        }
+
+        .policy li {
+            margin-bottom: 0.35rem;
+        }
+
+        .policy li:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy strong {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes star-drift {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10%);
+            }
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.15;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.85;
+                transform: scale(1.25);
+                box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars-parallax" id="stars-parallax">
+        <div class="stars-container" id="stars-container"></div>
+    </div>
+
+    <main class="page">
+        <a class="back" href="../index.html">← mysteries.</a>
+        <h1>5★ Privacy Policy</h1>
+        <p class="updated">Last updated: July 12, 2026</p>
+
+        <div class="policy">
+            <section id="overview">
+                <h2>Overview</h2>
+                <p><strong>5★</strong> (“the Bot”) is a private helper and utility bot operated for the <strong>5$TAR /
+                        PlaqueBoyMax</strong> Discord community. It is not offered as a public multi-server product.</p>
+                <p>Utilizing the Bot and its features automatically acknowledges this policy.</p>
+                <h3>Who this applies to</h3>
+                <p>Members and staff of Discord servers where 5★ is a member of for staff and community utility
+                    features. This policy does not apply to users who are not members of the server or staff.</p>
+            </section>
+
+            <section id="collect">
+                <h2>Data We Collect</h2>
+                <h3>Discord account / member data</h3>
+                <ul>
+                    <li>User IDs, usernames, and nicknames</li>
+                    <li>Role IDs and role membership needed for permissions and staff tools</li>
+                    <li>Server, channel, and configuration IDs used to run the Bot</li>
+                </ul>
+                <h3>Message content (limited cases only)</h3>
+                <ul>
+                    <li>Commands you run with the Bot (including arguments)</li>
+                    <li>Messages in strike appeal threads you open (including attachments), so they can be reviewed</li>
+                    <li>Limited message content in other safety contexts where needed to protect the server</li>
+                </ul>
+                <h3>Community features</h3>
+                <ul>
+                    <li>Reaction leaderboard scores and related settings</li>
+                </ul>
+                <p>We do <strong>not</strong> read your DMs, monitor every message in the server, or use your data to
+                    train ML/AI models.</p>
+            </section>
+
+            <section id="use">
+                <h2>Use, Storage &amp; Sharing</h2>
+                <h3>How we use the data</h3>
+                <ul>
+                    <li>Track and review staff records and appeals</li>
+                    <li>Run utility tools such as 'SOS/Alert'</li>
+                    <li>Check user and role permissions for authorized access</li>
+                    <li>Keep community and staff features working</li>
+                    <li>Help keep the server safe and the Bot running reliably</li>
+                </ul>
+                <h3>Where data is stored</h3>
+                <p>Bot data is stored <strong>off Discord</strong> locally on the Bot's system. This can include staff
+                    records, transcripts, and operational logs.</p>
+                <p>Access is strictly limited as needed for staff management and maintenance.</p>
+                <h3>Sharing</h3>
+                <p>We do not sell personal data. Data may be shared with authorized server staff for staff management,
+                    if required by law or to protect safety, or when it is already visible in Discord.</p>
+            </section>
+
+            <section id="choices">
+                <h2>Retention &amp; Your Choices</h2>
+                <h3>Retention</h3>
+                <ul>
+                    <li>Records and transcripts are retained so they can be reviewed and referenced</li>
+                    <li>Operational logs are limited and may be rotated</li>
+                    <li>Data may be removed when it is no longer needed</li>
+                </ul>
+                <p>Exact retention can vary based on the needs of the server and backups.</p>
+                <h3>Your choices</h3>
+                <ul>
+                    <li><strong>Appeals:</strong> Opening appeals means your thread messages will be logged.</li>
+                    <li><strong>Commands:</strong> Avoid putting sensitive personal information in command reasons or
+                        arguments.</li>
+                    <li><strong>Opt-out:</strong> Leaving the server stops future interaction with the Bot there;
+                        historical records may still be kept when needed.</li>
+                </ul>
+                <p>To ask about review or deletion of Bot-stored data where feasible, contact server managers. Some
+                    records may need to be kept for accountability or safety.</p>
+            </section>
+
+            <section id="other">
+                <h2>Other</h2>
+                <h3>Children’s privacy</h3>
+                <p>The Bot is intended for use in Discord communities that follow Discord’s Terms of Service and age
+                    requirements. We do not knowingly collect data from children in violation of those rules.</p>
+                <h3>Changes</h3>
+                <p>This policy is subject to change at any time without prior notice. The 'Last updated' date will be
+                    updated when changes are published.</p>
+                <h3>Contact</h3>
+                <p>For privacy questions about 5★, contact server managers.</p>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const starsContainer = document.getElementById('stars-container');
+            const starsParallax = document.getElementById('stars-parallax');
+            const numStars = 90;
+
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                const size = Math.random() * 1.6 + 0.4;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDuration = `${Math.random() * 3 + 2.5}s`;
+                star.style.animationDelay = `${Math.random() * -5}s`;
+                starsContainer.appendChild(star);
+            }
+
+            let targetX = 0;
+            let targetY = 0;
+            let currentX = 0;
+            let currentY = 0;
+            const maxShift = 32;
+
+            window.addEventListener('mousemove', (e) => {
+                targetX = (e.clientX / window.innerWidth - 0.5) * 2;
+                targetY = (e.clientY / window.innerHeight - 0.5) * 2;
+            }, { passive: true });
+
+            function updateParallax() {
+                currentX += (targetX - currentX) * 0.055;
+                currentY += (targetY - currentY) * 0.055;
+                const scrollOffset = -window.scrollY * 0.32;
+                const mouseX = -currentX * maxShift;
+                const mouseY = -currentY * maxShift;
+                starsParallax.style.transform = `translate3d(${mouseX.toFixed(2)}px, ${(scrollOffset + mouseY).toFixed(2)}px, 0)`;
+                requestAnimationFrame(updateParallax);
+            }
+
+            requestAnimationFrame(updateParallax);
+        });
+    </script>
+</body>
+
+</html>
